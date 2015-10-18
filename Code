@@ -1,0 +1,114 @@
+def main():
+    #get user input on what user wants to see 
+    user = int (input('Press 0 to see my day without technology\nPress 1 to play game about technology\nPress 2 to Exit\nInput: '))
+    while (user != 0) and (user != 1) and (user != 2):
+        user = int(input('\nInvalid Input, Please Try Again: '))
+        
+    #user can keep playing game or reading about my day for infinity
+    while (user != 2):
+        
+        #code for my Day 
+        if (user == 0):
+            print ("First, some questions to think about\n")
+            guess = int (input('Do you think Haley study more? Press 0 for yes. Press 1 for no: '))
+            
+            while (guess != 0) and (guess != 1):
+                guess = int(input('\nInvalid Input, Please Try Again: '))
+                
+            if (guess == 0):
+                print ("\nIncorrect because Haley's Computer and tablet holds all of the information")
+                print("\nHaley observed that technology is replacing hard copies with digital copies")
+                print ("\nDigital media is useful, but potentially problematic to people who broke their hard drives and future archaeologists")
+                
+            if (guess == 1):
+                print ("\nCorrect because Haley's Computer and tablet holds all of the information")
+                print ("\nHaley observed that technology is replacing hard copies with digital copies")
+                print ("\nDigital Copies are nice since it saves paper and space")
+                
+            guess = int (input('\nDo you think Haley had more fun? Press 0 for yes. Press 1 for no: '))
+            while (guess != 0) and (guess != 1):
+                guess = int(input('\nInvalid Input, Please Try Again: '))
+                
+            if (guess == 0):
+                print ("\nCorrect because Haley spent a lot more time with boyfriend.")
+                print ("\nHaley and her boyfriend even competed in an ice cream juggling contest and won")
+            if (guess == 1):
+                print ("\nIncorrect because Haley was not able be stressed by deadlines, homeowork, or coding.")
+
+            guess = int (input('\nPress 0 or 1 to see my activities: '))
+            while (guess != 0) and (guess != 1):
+                guess = int(input('\nInvalid Input, Please Try Again: '))
+            if (guess == 1) or (guess == 0):
+                print ("\n6:00pm - 10:00pm : Date night. Started no technology then in order to stress or think about an important interview that happened earlier that day.")
+                print ("\n10:00pm - 11:00pm: Got ready for bed.")
+                print ("\n11:00pm - 8:00am: Slept.")
+                print ("\n8:00am - 9:00am: Got ready for the day. Used a toaster to make breakfast.")
+                print ("\n9:00am - 11:00am: Sewed a cape as part of a Halloween costume.")
+                print ("\n11:00am - 3:00pm: Tae kwon do. Music is played during practice to help with drills.")
+                print ("\n3:00pm - 3:30pm: Painted nails.")
+                print ("\n3:30pm - 4:00pm: Tea Time.")
+                print ("\n4:00pm - 5:30: Take a nap since I was sick.")
+                print ("\n5:30pm - 6:00pm: Dinner Time. Used credit card to buy food.")            
+            
+            
+        #code for the game     
+        if (user == 1):
+            print ("\nThere will be a series of questions. Press 0 to answer phone. Press 1 to ignore phone.")
+
+            answer = int (input('\nPhone buzzes during a date. What do you do: '))
+
+            while (answer != 0) and (answer != 1):
+                answer = int(input('\nInvalid Input, Please Try Again: '))
+                
+            if (answer == 0):
+                #based on actual datenight with boyfriend 
+                print ("\nYou got to vote on a date and theme for a Halloween Party, but your date got annoyed")
+                
+            if (answer == 1):
+                print ("\nYou had a really nice date.")
+                
+            answer = int (input('\nPhone buzzes during a class. What do you do: '))
+
+            while (answer != 0) and (answer != 1):
+                answer = int(input('\nInvalid Input, Please Try Again: '))
+                
+            if (answer == 0):
+                print ("\nYou got arrange an interview with a famous company, but you missed the important equation.")
+                
+            if (answer == 1):
+                print ("\nYou were able to understand the whole lecture, but you missed your chance for an interview.")
+
+            answer = int (input('\nPhone buzzes while you are studying. What do you do: '))
+
+            while (answer != 0) and (answer != 1):
+                answer = int(input('\nInvalid Input, Please Try Again: '))
+                
+            if (answer == 0):
+                #actually missed a pancake party with IEEE since I did not use phone 
+                print ("\nYou got an invite to a pancake party.")
+                
+            if (answer == 1):
+                print ("\nYou were able to finish homework early")
+
+            answer = int (input('\nPhone buzzes while you are walking. What do you do: '))
+
+            while (answer != 0) and (answer != 1):
+                answer = int(input('\nInvalid Input, Please Try Again: '))
+                
+            if (answer == 0):
+                #saw this happend
+                print ("\nYou got by a bike.")
+                
+            if (answer == 1):
+                print ("\nYou missed the memo about class being cancelled.")
+            
+
+        #update user input 
+        user = int (input('\nPress 0 to see my day without technology\nPress 1 to play game about technology\nPress 2 to Exit\nInput: '))
+        while (user != 0) and (user != 1) and (user != 2):
+            user = int(input('\nInvalid Input, Please Try Again: '))
+
+    #end of the program/game
+    print("\nBye") 
+
+main() 
